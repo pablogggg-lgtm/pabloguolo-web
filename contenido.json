@@ -1,0 +1,130 @@
+{
+  "estudio": {
+    "nombre": "Dr. Pablo Guolo",
+    "subtitulo": "Abogado — T° 139 F° 215 CPACF · T° 55 F° 268 CASI",
+    "matriculas": {
+      "cpacf": "T° 139 F° 215",
+      "casi": "T° 55 F° 268"
+    }
+  },
+  "contacto": {
+    "whatsapp": "5491134768472",
+    "whatsapp_display": "11 3476-8472",
+    "email": "pabloguolo@gmail.com",
+    "ubicacion": "Montevideo 184 PB \"B\" — CABA",
+    "respuesta": "Respuesta en el día"
+  },
+  "hero": {
+    "eyebrow": "Estudio Jurídico · CABA y GBA",
+    "titulo": "Dr. Pablo Guolo",
+    "subtitulo": "Abogado — T° 139 F° 215 CPACF · T° 55 F° 268 CASI",
+    "descripcion": "Defensa legal personalizada en Derecho de Familia, Sucesiones, Laboral y Civil. Sin estructuras de estudio grande — con usted desde la primera consulta hasta la resolución de su caso.",
+    "badge_strong": "Atención en CABA y Provincia",
+    "badge_text": "Consultas presenciales y online · Respuesta en el día",
+    "cta_primary": "💬 Consultar por WhatsApp",
+    "cta_secondary": "Ver mis servicios →",
+    "quote": "Cada caso merece atención directa. Usted habla conmigo — no con un intermediario.",
+    "stats": [
+      { "numero": "+10", "label": "Años de ejercicio" },
+      { "numero": "CABA", "label": "y Prov. BsAs" },
+      { "numero": "PJN", "label": "Fuero Nacional" },
+      { "numero": "SCBA", "label": "Prov. Buenos Aires" }
+    ]
+  },
+  "areas": [
+    {
+      "numero": "01",
+      "titulo": "Derecho de Familia",
+      "descripcion": "Asesoramiento y representación en todas las etapas del conflicto familiar, con enfoque en la protección de los menores y los derechos de cada parte.",
+      "items": [
+        "Alimentos y cuota alimentaria",
+        "Divorcio y separación de bienes",
+        "Régimen de comunicación",
+        "Violencia familiar",
+        "Adopción y filiación"
+      ]
+    },
+    {
+      "numero": "02",
+      "titulo": "Sucesiones",
+      "descripcion": "El proceso sucesorio no es sobre los bienes — es sobre las personas y su condición de herederos. Acompañamos a la familia en cada etapa, desde la apertura hasta la declaratoria.",
+      "items": [
+        "Sucesiones ab intestato (sin testamento) y testamentarias (con testamento)",
+        "Declaratoria de herederos",
+        "Sucesiones con bienes en el exterior",
+        "Tracto abreviado y venta de inmuebles en sucesión",
+        "CABA y toda la Provincia de Buenos Aires"
+      ]
+    },
+    {
+      "numero": "03",
+      "titulo": "Derecho Laboral",
+      "descripcion": "Representamos tanto al trabajador como al empleador. Cada parte tiene derechos y obligaciones — y en ambos casos la estrategia legal desde el inicio marca la diferencia.",
+      "items": [
+        "Despidos y liquidaciones",
+        "Accidentes de trabajo (ART)",
+        "Enfermedades profesionales",
+        "Trabajo no registrado",
+        "Conciliación obligatoria (SECLO)",
+        "Defensa del empleador ante demandas",
+        "Asesoramiento en desvinculaciones"
+      ]
+    },
+    {
+      "numero": "04",
+      "titulo": "Derecho Civil",
+      "descripcion": "Resolución de conflictos en materia de contratos, propiedad y daños. Representación judicial y extrajudicial en CABA y Provincia.",
+      "items": [
+        "Accidentes de tránsito",
+        "Desalojos y locaciones",
+        "Daños y perjuicios",
+        "Cobro de deudas",
+        "Contratos civiles y comerciales"
+      ]
+    }
+  ],
+  "proceso": [
+    {
+      "numero": "01",
+      "titulo": "Consulta inicial",
+      "descripcion": "Me contás el problema. Analizo su viabilidad jurídica y te explico sin tecnicismos qué se puede hacer y qué no."
+    },
+    {
+      "numero": "02",
+      "titulo": "Estrategia",
+      "descripcion": "Definimos juntos el camino: negociación, mediación o litigio. Te presento un presupuesto claro antes de avanzar."
+    },
+    {
+      "numero": "03",
+      "titulo": "Ejecución",
+      "descripcion": "Me encargo de todos los escritos, presentaciones y seguimiento del expediente. Vos te enterás de cada movimiento."
+    },
+    {
+      "numero": "04",
+      "titulo": "Resolución",
+      "descripcion": "Acuerdo homologado o sentencia favorable. Seguimiento hasta el cobro efectivo o cumplimiento de la resolución."
+    }
+  ],
+  "por_que": [
+    {
+      "icono": "⚖️",
+      "titulo": "Matriculado y colegiado",
+      "descripcion": "T° 139 F° 215 CPACF (Capital Federal) · T° 55 F° 268 CASI (Provincia de Buenos Aires). Habilitado para actuar en PJN y SCBA."
+    },
+    {
+      "icono": "📞",
+      "titulo": "Comunicación directa",
+      "descripcion": "Atención online y presencial. Respuesta en el día a consultas urgentes. Sin secretarias intermediarias."
+    },
+    {
+      "icono": "📋",
+      "titulo": "Honorarios claros",
+      "descripcion": "Presupuesto detallado antes de comenzar. Sin costos sorpresa. Opciones de pago acordadas al inicio."
+    },
+    {
+      "icono": "🗺️",
+      "titulo": "Nuestra área de trabajo",
+      "descripcion": "Trabajamos en la Ciudad de Buenos Aires y toda la Provincia de Buenos Aires. Si su consulta es de otra provincia, lo orientamos y derivamos a un colega de confianza."
+    }
+  ]
+}

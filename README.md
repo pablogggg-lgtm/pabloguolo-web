@@ -23,8 +23,8 @@ Sitio web profesional de Dr. Pablo Guolo — Abogado.
 5. **En 30 segundos, la página en vivo está actualizada**
 
 Ejemplos:
-- Cambiar email: `"email": "nuevo@email.com"`
-- Cambiar teléfono: `"whatsapp": "549XXXXXXXXXX"`
+- Cambiar email: `"email": "pabloguolo@gmail.com"`
+- Cambiar teléfono: `"whatsapp": "5491134768472"`
 - Cambiar descripción de área: Editas el `"descripcion"` dentro de cada área
 
 ### Cambiar colores, fonts, layout:

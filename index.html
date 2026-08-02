@@ -1555,7 +1555,7 @@
   </div>
 
   <div class="contacto-right fade-up">
-    <form onsubmit="handleSubmit(event)">
+    <form name="contacto" method="POST" data-netlify="true" onsubmit="handleSubmit(event)"><input type="hidden" name="form-name" value="contacto" />
       <div class="form-row">
         <div class="form-group">
           <label for="nombre">Nombre</label>
@@ -1644,7 +1644,7 @@
     const area = form.querySelector('#area').value;
     const mensaje = form.querySelector('#mensaje').value;
     const texto = `Hola Dr. Guolo, le escribo desde el formulario de su web.%0ANombre: ${encodeURIComponent(nombre)}%0AÁrea: ${encodeURIComponent(area)}%0ASituación: ${encodeURIComponent(mensaje)}`;
-    window.open(`https://wa.me/5491134768472?text=${texto}`, '_blank');
+    window.open(`https://wa.me/5491134768472?text=${texto}`, '_blank'); try { var formData = new URLSearchParams(new FormData(form)).toString(); fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: formData }).catch(function(){}); } catch (err) {}
     form.reset();
   }
 

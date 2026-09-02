@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Pablo Guolo — Abogado | CABA y Provincia de Buenos Aires</title>
+  <meta name="description" content="Abogado especialista en Derecho de Familia, Laboral y Civil. Atención personalizada en CABA y Provincia de Buenos Aires. T° 139 F° 215 CPACF · T° 55 F° 268 CASI.">
   <meta name="facebook-domain-verification" content="Opv5zk1yq858ie5Bm9ptv7imwezk10" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Pablo Guolo — Abogado | CABA y Provincia de Buenos Aires</title>
-<meta name="description" content="Abogado especialista en Derecho de Familia, Laboral y Civil. Atención personalizada en CABA y Provincia de Buenos Aires. T° 139 F° 215 CPACF · T° 55 F° 268 CASI.">
-<link rel="icon" type="image/png" href="./logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<!-- Google Analytics - Reemplaza G-8C9KKCHYN3 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8C9KKCHYN3"></script>
-<script>
-window.dataLayer = window.dataLayer || [];<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta name="facebook-domain-verification" content="Opv5zk1yq858ie5Bm9ptv7imwezk10" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Pablo Guolo — Abogado | CABA y Provincia de Buenos Aires</title>
-<meta name="description" content="Abogado especialista en Derecho de Familia, Laboral y Civil. Atención personalizada en CABA y Provincia de Buenos Aires. T° 139 F° 215 CPACF · T° 55 F° 268 CASI.">
-<link rel="icon" type="image/png" href="./logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<!-- Google Analytics - Reemplaza G-8C9KKCHYN3 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8C9KKCHYN3"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-8C9KKCHYN3');
-gtag('config', 'AW-11232301086');
-</script>
-<!-- Google Ads Conversion Tracking -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11232301086"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'AW-11232301086');
-</script>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8C9KKCHYN3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    // Configuración GA4
+    gtag('config', 'G-8C9KKCHYN3', {
+      'page_path': window.location.pathname,
+      'allow_google_signals': true,
+      'allow_ad_personalization_signals': true
+    });
+    
+    // Configuración Google Ads
+    gtag('config', 'AW-11232301086');
+  </script>
+
+  <!-- Eventos de tracking personalizados para GA4 -->
+  <script>
+    // Funciones de tracking reutilizables
+    window.trackEvent = function(eventName, eventParams) {
+      gtag('event', eventName, eventParams);
+    };
+
+    // Track de secciones visitadas
+    window.trackSectionView = function(sectionName) {
+      gtag('event', 'view_section', {
+        'section_name': sectionName,
+        'value': 1
+      });
+    };
+
+    // Track de clicks en WhatsApp
+    window.trackWhatsAppClick = function(source) {
+      gtag('event', 'click_whatsapp', {
+        'source': source,
+        'timestamp': new Date().toISOString()
+      });
+      gtag('event', 'conversion', {
+        'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp',
+        'value': 1.0,
+        'currency': 'ARS'
+      });
+    };
+
+    // Track de envío de formulario
+    window.trackFormSubmit = function() {
+      gtag('event', 'form_submit', {
+        'timestamp': new Date().toISOString()
+      });
+    };
+  </script>
+
+  <style>
 <style>
 :root {
 --navy: #0F1F3D;
@@ -1143,7 +1169,7 @@ footer { flex-direction: column; gap: 1rem; text-align: center; padding: 2rem; }
 <li><a href="#proceso">Proceso</a></li>
 <li><a href="#contacto">Contacto</a></li>
 </ul>
-<a href="https://wa.me/5491134768472?text=Hola%20Dr.%20Guolo%2C%20quisiera%20consultar%20sobre%20mi%20caso." class="nav-cta" target="_blank" onclick="gtag('event', 'conversion', {'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp'});">Primera Consulta</a>
+<a href="https://wa.me/5491134768472?text=Hola%20Dr.%20Guolo%2C%20quisiera%20consultar%20sobre%20mi%20caso." class="nav-cta" target="_blank" data-source="nav_header" onclick="trackWhatsAppClick(this.dataset.source); gtag('event', 'conversion', {'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp'});">Primera Consulta</a>
 </nav>
 
 <!-- HERO -->
@@ -1161,7 +1187,7 @@ Sin estructuras de estudio grande — con usted desde la primera consulta
 hasta la resolución de su caso.
 </p>
 <div class="hero-actions">
-<a href="https://wa.me/5491134768472?text=Hola%20Dr.%20Guolo%2C%20quisiera%20consultar%20sobre%20mi%20caso." class="btn-primary" target="_blank" onclick="gtag('event', 'conversion', {'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp'});">
+<a href="https://wa.me/5491134768472?text=Hola%20Dr.%20Guolo%2C%20quisiera%20consultar%20sobre%20mi%20caso." data-source="areas" class="btn-primary" target="_blank" onclick="trackWhatsAppClick(this.dataset.source || 'unknown'); gtag('event', 'conversion', {'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp'});">
 💬 Consultar por WhatsApp
 </a>
 <a href="#areas" class="btn-secondary">Ver mis servicios →</a>
@@ -1390,7 +1416,7 @@ Vivo en el exterior — ¿pueden representarme igual?
 
 <div class="faq-cta fade-up">
 <p>¿Tiene otra consulta sobre su caso en particular?</p>
-<a href="https://wa.me/5491134768472?text=Hola%20Dr.%20Guolo%2C%20quisiera%20consultar%20sobre%20una%20sucesi%C3%B3n." class="btn-primary" target="_blank" onclick="gtag('event', 'conversion', {'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp'});">💬 Consultar por WhatsApp</a>
+<a href="https://wa.me/5491134768472?text=Hola%20Dr.%20Guolo%2C%20quisiera%20consultar%20sobre%20una%20sucesi%C3%B3n." data-source="areas" class="btn-primary" target="_blank" onclick="trackWhatsAppClick(this.dataset.source || 'unknown'); gtag('event', 'conversion', {'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp'});">💬 Consultar por WhatsApp</a>
 </div>
 </div>
 </section>
@@ -1463,7 +1489,7 @@ Vivo en el exterior — ¿pueden representarme igual?
 
 <div class="exterior-cta fade-up">
 <p>¿Estás en el exterior y necesitás resolver algo en Argentina?</p>
-<a href="https://wa.me/5491134768472?text=Hola%20Dr.%20Guolo%2C%20vivo%20en%20el%20exterior%20y%20necesito%20resolver%20un%20tr%C3%A1mite%20en%20Argentina." class="btn-primary" target="_blank" onclick="gtag('event', 'conversion', {'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp'});">💬 Escribinos por WhatsApp</a>
+<a href="https://wa.me/5491134768472?text=Hola%20Dr.%20Guolo%2C%20vivo%20en%20el%20exterior%20y%20necesito%20resolver%20un%20tr%C3%A1mite%20en%20Argentina." data-source="areas" class="btn-primary" target="_blank" onclick="trackWhatsAppClick(this.dataset.source || 'unknown'); gtag('event', 'conversion', {'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp'});">💬 Escribinos por WhatsApp</a>
 </div>
 </div>
 </section>
@@ -1553,7 +1579,7 @@ y que las decisiones estratégicas las tomamos juntos.
 Cuénteme su situación y le digo qué opciones tiene.
 </p>
 <div class="contacto-info">
-<a href="https://wa.me/5491134768472?text=Hola%20Dr.%20Guolo%2C%20quisiera%20consultar%20sobre%20mi%20caso." class="contact-item" target="_blank" onclick="gtag('event', 'conversion', {'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp'});">
+<a href="https://wa.me/5491134768472?text=Hola%20Dr.%20Guolo%2C%20quisiera%20consultar%20sobre%20mi%20caso." data-source="exterior" data-source="contact_form" class="contact-item" target="_blank" onclick="trackWhatsAppClick(this.dataset.source || 'unknown'); gtag('event', 'conversion', {'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp'});">
 <span class="contact-icon">💬</span>
 <div class="contact-text">
 <span class="contact-label">WhatsApp</span>
@@ -1621,7 +1647,7 @@ Cuénteme su situación y le digo qué opciones tiene.
 </footer>
 
 <!-- WHATSAPP FLOTANTE -->
-<a href="https://wa.me/5491134768472?text=Hola%20Dr.%20Guolo%2C%20quisiera%20consultar%20sobre%20mi%20caso." class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" title="Contactar por WhatsApp" onclick="gtag('event', 'conversion', {'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp'});">
+<a href="https://wa.me/5491134768472?text=Hola%20Dr.%20Guolo%2C%20quisiera%20consultar%20sobre%20mi%20caso." data-source="floating_button" class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" title="Contactar por WhatsApp" onclick="trackWhatsAppClick(this.dataset.source || 'unknown'); gtag('event', 'conversion', {'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp'});">
 💬
 </a>
 
@@ -1666,9 +1692,33 @@ const form = e.target;
 const nombre = form.querySelector('#nombre').value;
 const area = form.querySelector('#area').value;
 const mensaje = form.querySelector('#mensaje').value;
+
+// Track detallado del formulario
+gtag('event', 'contact_form_submit', {
+  'area_selected': area,
+  'message_length': mensaje.length,
+  'timestamp': new Date().toISOString()
+});
+
+// Track de conversión
+gtag('event', 'conversion', {
+  'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp',
+  'value': 1.0,
+  'currency': 'ARS'
+});
+
 const texto = `Hola Dr. Guolo, le escribo desde el formulario de su web.%0ANombre: ${encodeURIComponent(nombre)}%0AÁrea: ${encodeURIComponent(area)}%0ASituación: ${encodeURIComponent(mensaje)}`;
-gtag('event', 'conversion', {'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp'});
-window.open(`https://wa.me/5491134768472?text=${texto}`, '_blank'); try { var formData = new URLSearchParams(new FormData(form)).toString(); fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: formData }).catch(function(){}); } catch (err) {}
+window.open(`https://wa.me/5491134768472?text=${texto}`, '_blank');
+
+try {
+  var formData = new URLSearchParams(new FormData(form)).toString();
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: formData
+  }).catch(function(){});
+} catch (err) {}
+
 form.reset();
 }
 
@@ -1677,6 +1727,35 @@ window.addEventListener('scroll', () => {
 const nav = document.querySelector('nav');
 nav.style.boxShadow = window.scrollY > 50 ? '0 2px 30px rgba(0,0,0,0.3)' : 'none';
 });
+
+// Track de secciones visitadas (Intersection Observer)
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const sectionId = entry.target.id;
+      if (sectionId) {
+        gtag('event', 'scroll_to_section', {
+          'section': sectionId,
+          'timestamp': new Date().toISOString()
+        });
+      }
+    }
+  });
+}, { threshold: 0.3 });
+
+// Observar secciones principales
+document.querySelectorAll('section[id]').forEach(section => {
+  sectionObserver.observe(section);
+});
+
+// Track de tiempo en página
+let engagementTimer = setTimeout(() => {
+  gtag('event', 'user_engagement', {
+    'engagement_type': 'time_on_page',
+    'duration_seconds': 30,
+    'timestamp': new Date().toISOString()
+  });
+}, 30000);
 </script>
 
 </body>

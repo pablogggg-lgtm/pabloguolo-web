@@ -28,7 +28,25 @@
     gtag('config', 'AW-11232301086');
   </script>
 
-  <!-- Eventos de tracking personalizados para GA4 -->
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1580658616927345');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1580658616927345&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Eventos de tracking personalizados para GA4 y Meta Pixel -->
   <script>
     // Funciones de tracking reutilizables
     window.trackEvent = function(eventName, eventParams) {
@@ -45,6 +63,7 @@
 
     // Track de clicks en WhatsApp
     window.trackWhatsAppClick = function(source) {
+      // Google Analytics
       gtag('event', 'click_whatsapp', {
         'source': source,
         'timestamp': new Date().toISOString()
@@ -53,6 +72,13 @@
         'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp',
         'value': 1.0,
         'currency': 'ARS'
+      });
+      
+      // Meta Pixel
+      fbq('track', 'Lead', {
+        'source': source,
+        'content_name': 'WhatsApp Consultation Click',
+        'content_type': 'legal_service'
       });
     };
 
@@ -65,7 +91,6 @@
   </script>
 
   <style>
-<style>
 :root {
 --navy: #0F1F3D;
 --navy-mid: #1B2A4A;
@@ -1700,9 +1725,17 @@ gtag('event', 'contact_form_submit', {
   'timestamp': new Date().toISOString()
 });
 
-// Track de conversión
+// Track de conversión en Google Ads
 gtag('event', 'conversion', {
   'send_to': 'AW-11232301086/8xetCOi75-EYEJ6g_esp',
+  'value': 1.0,
+  'currency': 'ARS'
+});
+
+// Track en Meta Pixel
+fbq('track', 'Lead', {
+  'content_name': 'Formulario de Consulta - ' + area,
+  'content_type': 'legal_service',
   'value': 1.0,
   'currency': 'ARS'
 });

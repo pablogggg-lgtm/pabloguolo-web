@@ -1740,7 +1740,7 @@ fbq('track', 'Lead', {
   'currency': 'ARS'
 });
 
-const texto = `Hola Dr. Guolo, le escribo desde el formulario de su web.%0ANombre: ${encodeURIComponent(nombre)}%0AÁrea: ${encodeURIComponent(area)}%0ASituación: ${encodeURIComponent(mensaje)}`;
+const texto = `Hola Dr. Guolo, soy ${encodeURIComponent(nombre)}. Tengo una consulta sobre ${encodeURIComponent(area)}: ${encodeURIComponent(mensaje)}`;
 window.open(`https://wa.me/5491134768472?text=${texto}`, '_blank');
 
 try {
